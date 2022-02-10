@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>Project 2</title>
+    
+    <link rel="stylesheet" href="Blah-styles.css" type="text/css">
+    
+    <script src="Blah-scripts.js"></script>
+      
+    <style>
+        #ship
+        {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+        }
+        
+        
+        #b
+        {
+            position: absolute;
+            top: 21px;
+            
+            border: 0px solid transparent;
+            border-top-width: 0;
+            border-right-width: 7px;
+            border-left: 17px solid transparent;
+            border-bottom: 14px solid green;
+        }
+        
+        #y
+        {
+            position: absolute;
+            top: 21px;
+            right: 0;
+            
+            border: 0px solid transparent;
+            border-top-width: 0;
+            border-left-width: 7px;
+            border-right: 17px solid transparent;
+            border-bottom: 14px solid green;
+        }
+        
+        #l
+        {
+            position: absolute;
+            top: 35px;
+            background: green;
+            height: 14px;
+            width: 70px;
+        }
+        
+        
+        #m
+        {
+            position: absolute;
+            left: 21px;
+            border: 0px solid transparent;
+            border-bottom: 35px solid green;
+            border-left-width: 14px;
+            border-right-width: 14px;
+        }
+        
+        #a
+        {
+            position: absolute;
+            top: 49px;
+            
+            border: 0px solid transparent;
+            border-top-width: 0;
+            border-right-width: 0;
+            border-left: 14px solid green;
+            border-right: 21px solid green;
+            border-bottom: 21px solid transparent;
+        }
+        
+        #z
+        {
+            position: absolute;
+            top: 49px;
+            right: 0;
+            border: 0px solid transparent;
+            border-top-width: 0;
+            border-left-width: 0;
+            border-right: 14px solid green;
+            border-left: 21px solid green;
+            border-bottom: 21px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="window">
+        <div id = "ship">
+            <div id="a"></div>
+            <div id="z"></div>
+            <div id="l"></div>
+            <div id="m"></div>
+            <div id="b"></div>
+            <div id="y"></div>
+        </div>
+    </div>
+    <div id ="container">
+        <p id="inst">
+            <strong>INSTRUCTIONS:</strong><br>
+            Use the LEFT and RIGHT arrow keys to move.<br>
+            Use SPACEBAR to shoot.<br>
+            Score 5 pts for dodging an object.<br>
+            Score 3 pts for shooting an object.<br>
+            Press F5 to Restart<br>
+        </p>
+        <div id="button">
+            <a href="Documentation.html">
+                Docs
+            </a>
+        </div>
+    </div>
+</body>
+</html>

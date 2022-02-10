@@ -1,0 +1,28 @@
+#window
+{
+    border: 1px solid black;
+}
+
+#container
+{
+    display: block;
+    width: 550px;
+    margin: auto;
+}
+
+button
+{
+    font-size: 20px;
+    display: block;
+    margin: auto;
+}
+
+
+#inst
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left;
+    width: 720px;
+    left: 40%;
+}

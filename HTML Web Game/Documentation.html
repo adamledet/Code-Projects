@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>Project 2 docs</title>
+    
+    <link rel="stylesheet" href="Blah-styles.css" type="text/css">
+    
+    
+</head>
+
+<body>
+    
+    <div id = "ship">
+    </div>
+
+    <p>
+        Adam Ledet &amp; Enan Munzar <br />
+        Prof. Boyle <br />
+        Web Design &amp; Implementation <br />
+        5 November 2017
+    </p>
+    
+    <p>
+        Our game is a 2D shooter where multicolored shapes will fall from a random position onto the player. The player has 3 lives that are lost upon collision with objects.<br />
+        Inspiration for the game comes from the classic arcade titles "Asteroids" and "Space Invaders."
+    </p>
+    
+    <p>
+        The player moves along the x-axis in one dimension using the arrow keys and can fire using the spacebar.<br />
+        Destroying an object awards 2 points while simply dodging one awards 1 point.<br>
+        Losing all three lives exits the Update loop, causing the game to end by preventing the player from taking action. To signal this, the window turns black.
+    </p>
+    
+    <p>
+        5 objects are created on startup, and there will only ever be 5 objects in the game.
+        Rather than actually destroyed, objects that need to be removed are instead given new coordinates and attributes and reset to above the window.
+    </p>
+    
+    <p>
+        The main setup for the game is a window id inside of a div created in our html code.
+    </p>
+    
+    <p>
+        By referencing and appending divs to this window, we were able to create the player and objects.
+    </p>
+    
+    <p>
+        Adam Ledet) Adam gave our player and objects movement. Additionally, he was completely responsible for object creation and resetting of their position.<br />
+        Adam handled collision for player and asteroid using AABB collision detection.<br />
+        A simpler form of detection was used for objects bouncing off of walls and to stop player movement with walls.<br />
+        Adam created an array to be used to give visibility and variety to the objects. Finally, he created the lives and score for the player and implemented the Game Over screen.
+    </p>
+    
+    <p>
+
+        Enan Munzar) Enan created the very framework for the game. He built the first window and made the player appear on the screen for the first time.<br />
+        Following this, Enan made it possible to check when keys were pressed so that movement and shooting could be done with user-input.<br />
+        All shooting and the delay between firing was done by Enan.<br />
+        Finally, Enan created the player sprite and allowed the objects to be created with varying degrees of roundness.
+    </p>
+    
+    <script>
+        let ship = document.querySelector("#ship");
+        
+        let colors = ["#d00", "#3bd", "#d82", "#c28", "#999", "#8d3"];
+        
+        for (let color of colors)
+        {
+            let newDiv = document.createElement("div");
+            
+            newDiv.style.width = "100px";
+            newDiv.style.height = "100px";
+            
+            newDiv.style.backgroundColor = color;
+            newDiv.style.display = "inline-block";
+            
+            ship.appendChild(newDiv);
+        }
+        
+    </script>
+</body>
+</html>
